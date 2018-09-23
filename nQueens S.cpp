@@ -11,14 +11,14 @@ bool ok(int q[], int c) { //Okay function of 1D queens
 }
 // This function should return the number of solutions for the given board size (you don't need to print the solutions).
 int nqueens(int x) {
-int* q= new int[x]; //Declaring a pointer to memroy to dynamically allocate memory for the array
+int* q= new int[x]; //Declaring a pointer to memory to dynamically allocate memory for the array
 q[0] = 0; //Having everything to zero
 int c=0;
 int Solutions = 0; //THis variable will increment ever time a solution for the queens of n size is found
   while (c >= 0) {  
    	 c++;
       if(c == x){ //FOund a answer? 
-        Solutions++; //increase the number of solution
+        Solutions++; //increase the solution counter
         c--; //Decrease the colummn
       }
       else{
@@ -35,7 +35,7 @@ int Solutions = 0; //THis variable will increment ever time a solution for the q
 	}
     }
    return Solutions; //Return ans
-   delete[] q; //Delete the array cause c++ doesnt have garbage collection. Also i dont want a memory leak, Genji.exe cant take all that
+   delete[] q; //Delete the array cause c++ doesnt have garbage collection. Also i dont want a memory leak
 }
    
 int main() {
