@@ -13,7 +13,7 @@ bool test(int cross[], int x) {
 		{0,3,4,-1},
 		{3,4,5,6,-1},
 	};
-	for(int i = 0; checkList[x][i] != -1; i++) { //Checking if the number with its respective array is conglicting 
+	for(int i = 0; checkList[x][i] != -1; i++) { 
 		if(abs(cross[checkList[x][i]] - cross[x]) == 1 ) { 
 			return false;
 		} 
